@@ -1,0 +1,11 @@
+<app-header [user]="user"></app-header>
+
+Ola {{user?.name}}, Seu email é "{{user?.email}}"
+<br>
+<hr>
+<div [innerHTML]="user?.email"></div>
+<hr>
+
+<button (click)="login()" >
+    <img src="/assets/google-logo.svg" /> Login with Google
+</button>
